@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+    <script src="settings.js" defer></script>
+</head>
+<body>
+    <section>
+        <ul id="topbar">
+            <li><a href="index.html">Calendrier</a></li>
+            <li><a href="add.html">Ajouter</a></li>
+            <li><a href="settings.html">Paramètres</a></li>
+        </ul>
+    </section>
+    <p>Rentre les objectifs que tu veux atteindre !</p>
+    <form action="" method="get" id="formSettings">
+        <div class="form">
+            <label for="goalCal">Entre ton objectif calorique</label>
+            <input type="number" name="goalCal" id="goalCal" required>
+        </div>
+        <div class="form">
+            <label for="goalProt">Entre ton objectif en protéine</label>
+            <input type="number" name="goalProt" id="goalProt" required>
+        </div>
+        <div class="form">
+            <label for="MainCal">Entre ta maintenance calorique</label>
+            <input type="number" name="MainCal" id="MainCal" required>
+        </div>
+        <div class="form">
+            <input type="submit" value="Valider">
+        </div>
+    </form>
+</body>
+</html>

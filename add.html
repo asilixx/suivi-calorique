@@ -4,29 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ajouter</title>
-    <script src="app.js" defer></script>
+    <script src="add.js" defer></script>
 </head>
 <body>
     <section>
         <ul id="topbar">
             <li><a href="index.html">Calendrier</a></li>
-            <li><a href="ajouter.html">Ajouter</a></li>
-            <li><a href="parametre">Paramètre</a></li>
+            <li><a href="add.html">Ajouter</a></li>
+            <li><a href="settings.html">Paramètres</a></li>
         </ul>
     </section>
     <p>Ton activité physique ou ton repas !</p>
-    <form action="" method="get" id="monFormulaire">
+    <form action="" method="get" id="formAdd">
         <select name="type" id="type" class="form">
             <option value="">--Choisis un type--</option>
             <option value="repas">Repas</option>
             <option value="sport">Activité physique</option>
         </select>
         <div class="form">
-            <label for="calories">Entre les calories dépenser ou consommer</label>
-            <input type="number" name="calories" id="calories"/>
+            <label for="calories">Entre les calories dépensées ou consommées</label>
+            <input type="number" name="calories" id="calories" required />
         </div>
         <div class="form" id="proteine">
-            <label for="proteines">Entre les proteines consommer</label>
+            <label for="proteines">Entre les protéines consommées</label>
             <input type="number" name="proteines" id="proteines" required />
         </div>
         <div class="form">
@@ -34,7 +34,7 @@
             <input type="date" name="date" id="date" required />
         </div>
         <div class="form">
-            <label for="info">C'étais quoi ?</label>
+            <label for="info">C'était quoi ?</label>
             <input type="text" name="info" id="info" required />
         </div>
         <div class="form">
